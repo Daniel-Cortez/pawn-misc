@@ -1,4 +1,4 @@
-SA-MP-compatible SHA256_PassHash implementation with optional 2 extra parameters `pack` and `uppercase` for returning the string in packed/unpacked form and in uppercase/lowercase respectively.
+SA-MP-compatible SHA256_PassHash implementation with 2 optional extra parameters `pack` and `uppercase` for returning the string in packed/unpacked form and in uppercase/lowercase respectively.
 
 ```Pawn
 #define MAX_SHA256_HASH 64
