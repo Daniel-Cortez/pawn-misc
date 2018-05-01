@@ -1,12 +1,12 @@
 #include <console>
 #include <string>
 
-#define SHA256_HASH_LEN 64
+#define MAX_SHA256_HASH 64
 native SHA256_PassHash(const password[], const salt[], ret_hash[], ret_hash_len = sizeof(ret_hash), bool: pack = false, bool: uppercase = true);
 
 main()
 {
-	new hash[SHA256_HASH_LEN + 1];
+	new hash[MAX_SHA256_HASH + 1];
 
 	// uppercase unpacked
 	SHA256_PassHash("The quick brown fox jumps", " over the lazy dog", hash);
